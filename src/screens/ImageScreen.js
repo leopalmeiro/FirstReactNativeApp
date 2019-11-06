@@ -4,7 +4,7 @@ import ImageDetail from '../components/ImageDetail';
 
 const ImageScreen = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <ImageDetail 
             title="Forest" 
             imageSource={require('../../assets/forest.jpg')}
@@ -24,6 +24,14 @@ const ImageScreen = () => {
     )
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 5,
+        marginBottom: 5,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    }
+});
 
 export default ImageScreen;

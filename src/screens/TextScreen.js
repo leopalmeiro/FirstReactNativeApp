@@ -5,7 +5,7 @@ import { View,Text, TextInput, StyleSheet} from "react-native";
 const TextScreen = () => {
     const [password, setPassword] = useState('');
     return (
-        <View>
+        <View style={styles.container}>
         <Text>Enter your Password: </Text>
             <TextInput 
             style = {styles.input}
@@ -21,6 +21,9 @@ const TextScreen = () => {
 
 
 const styles = StyleSheet.create({
+    container: {
+        marginTop: 5
+    },
     input: {
         margin: 15,
         borderColor: 'black',
